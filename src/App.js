@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
 import "./index.css";
-import { ProductList } from "./features/product-list/ProductList";
+import Home from "./pages/Home";
 
 function App() {
-  return <ProductList />;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
