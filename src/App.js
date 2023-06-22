@@ -14,7 +14,6 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
-import { ProductDetails } from "./features/product-list/components/ProductDetails";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 const router = createBrowserRouter([
