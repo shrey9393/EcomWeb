@@ -18,11 +18,9 @@ import {
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 const sortOptions = [
-  { name: "Most Popular", href: "#", current: true },
-  { name: "Best Rating", href: "#", current: false },
-  { name: "Newest", href: "#", current: false },
-  { name: "Price: Low to High", href: "#", current: false },
-  { name: "Price: High to Low", href: "#", current: false },
+  { name: "Best Rating", sort: "rating", order: "desc", current: false },
+  { name: "Price: Low to High", sort: "price", order: "asc", current: false },
+  { name: "Price: High to Low", sort: "price", order: "desc", current: false },
 ];
 
 const filters = [
@@ -206,6 +204,11 @@ export function ProductList() {
     dispatch(fetchProductsByFilterAsync(newFilter));
     console.log(section.id, option.value);
   };
+  const handelSort = (e, option) => {
+    const newFilter = { ...filter, _sort: option.sort, _order: option.order };
+    setFilter(newFilter);
+    dispatch(fetchProductsByFilterAsync(newFilter));
+  };
 
   useEffect(() => {
     dispatch(fetchAllProductsAsync());
@@ -362,8 +365,8 @@ export function ProductList() {
                         {sortOptions.map((option) => (
                           <Menu.Item key={option.name}>
                             {({ active }) => (
-                              <a
-                                href={option.href}
+                              <p
+                                onClick={(e) => handelSort(e, option)}
                                 className={classNames(
                                   option.current
                                     ? "font-medium text-gray-900"
@@ -373,7 +376,7 @@ export function ProductList() {
                                 )}
                               >
                                 {option.name}
-                              </a>
+                              </p>
                             )}
                           </Menu.Item>
                         ))}
