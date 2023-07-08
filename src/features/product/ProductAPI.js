@@ -6,7 +6,7 @@ export function fetchAllProducts() {
     resolve({ data });
   });
 }
-export function fetchProductsByFilter(filter, sort) {
+export function fetchProductsByFilter(filter, sort, pagination) {
   // TODO: add multiple selection feature
   let queryString = "";
   for (let key in filter) {
@@ -16,9 +16,14 @@ export function fetchProductsByFilter(filter, sort) {
       queryString += `${key}=${lastCategoryValue}&`;
     }
   }
+
   for (let key in sort) {
     queryString += `${key}=${sort[key]}&`;
   }
+  for (let key in pagination) {
+    queryString += `${key}=${sort[key]}&`;
+  }
+
   return new Promise(async (resolve) => {
     // TODO: we will note hardcode this
     const response = await fetch(
