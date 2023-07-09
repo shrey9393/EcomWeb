@@ -4,6 +4,7 @@ import {
   fetchAllProductsAsync,
   fetchProductsByFilterAsync,
   selectAllProducts,
+  selectTotalItems,
 } from "../ProductSlice";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 
@@ -198,10 +199,11 @@ function classNames(...classes) {
 export function ProductList() {
   const dispatch = useDispatch();
   const products = useSelector(selectAllProducts);
+  const totalItems = useSelector(selectTotalItems);
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [page, setpage] = useState(1);
+  const [page, setPage] = useState(1);
   const [limit, setlimit] = useState(12);
 
   const handelFilter = (e, section, option) => {
@@ -222,16 +224,21 @@ export function ProductList() {
   };
   const handelSort = (e, option) => {
     const sort = { ...filter, _sort: option.sort, _order: option.order };
-    setpage(sort);
-  };
-  const handelPage = (e, option) => {
     setSort(sort);
+  };
+  const handelPage = (page) => {
+    console.log({ page });
+    setPage(page);
   };
 
   useEffect(() => {
     const pagination = { _page: page, _limit: ITEMS_PER_PAGE };
-    dispatch(fetchProductsByFilterAsync(filter, sort, pagination));
+    dispatch(fetchProductsByFilterAsync({ filter, sort, pagination }));
   }, [dispatch, filter, sort, page]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [totalItems, sort]);
 
   return (
     <>
@@ -335,8 +342,9 @@ export function ProductList() {
             <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
               <Pagination
                 page={page}
-                setPage={setpage}
+                setPage={setPage}
                 handelPage={handelPage}
+                totalItems={totalItems}
               />
             </div>
           </main>
@@ -524,7 +532,8 @@ function DesktopFilter({ page, setPage, handelFilter }) {
     </>
   );
 }
-function Pagination(page, setPage, handelPage, totalItems,index) {
+
+function Pagination({ page, setPage, handelPage, totalItems }) {
   return (
     <>
       <div className="flex flex-1 justify-between sm:hidden">
@@ -548,7 +557,12 @@ function Pagination(page, setPage, handelPage, totalItems,index) {
             <span className="font-medium">
               {(page - 1) * ITEMS_PER_PAGE + 1}
             </span>{" "}
-            to <span className="font-medium">{page * ITEMS_PER_PAGE + 1}</span>{" "}
+            to{" "}
+            <span className="font-medium">
+              {page * ITEMS_PER_PAGE > totalItems
+                ? totalItems
+                : page * ITEMS_PER_PAGE}
+            </span>{" "}
             of <span className="font-medium">{totalItems}</span> results
           </p>
         </div>
@@ -564,17 +578,22 @@ function Pagination(page, setPage, handelPage, totalItems,index) {
               <span className="sr-only">Previous</span>
               <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
             </a>
-            {/* {Array.from({ length: Math.ceil(totalItems / ITEMS_PER_PAGE) })}
-            .map((el,index) {=>{" "}
-            {
-              <div
-                onClick={(e) => handelPage(e, index + 1)}
-                aria-current="page"
-                className="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                {index + 1};
-              </div>
-            }} */}
+            {Array.from({ length: Math.ceil(totalItems / ITEMS_PER_PAGE) }).map(
+              (el, index) => (
+                <div
+                  onClick={(e) => handelPage(index + 1)}
+                  aria-current="page"
+                  className={`relative z-10 inline-flex cursor-pointer items-center ${
+                    index + 1 === page
+                      ? "bg-indigo-600  text-white "
+                      : "bg-white text-gray-600 hover:bg-gray-100 ring-1 ring-inset ring-gray-300"
+                  } px-4 py-2 text-sm font-semibold focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                >
+                  {index + 1}
+                </div>
+              )
+            )}
+
             <a
               href="#"
               className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
