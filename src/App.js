@@ -15,11 +15,16 @@ import SignupPage from "./pages/SignupPage";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import Protected from "./features/Auth/components/Protected";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <Protected>
+        <Home></Home>
+      </Protected>
+    ),
   },
   {
     path: "/login",
@@ -31,16 +36,28 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <CartPage />,
+    element: (
+      <Protected>
+        <CartPage />
+      </Protected>
+    ),
   },
   {
     path: "/Checkout",
-    element: <CheckOut />,
+    element: (
+      <Protected>
+        <CheckOut />
+      </Protected>
+    ),
   },
   {
     // : shows that it is a variable
     path: "/Product-details/:id",
-    element: <ProductDetailsPage />,
+    element: (
+      <Protected>
+        <ProductDetailsPage />
+      </Protected>
+    ),
   },
 ]);
 
