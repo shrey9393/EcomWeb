@@ -2336,24 +2336,156 @@
   ],
   "users": [
     {
-      "email": "shreyanshagrawal9393@gmail.com",
+      "email": "test12@gmail.com",
       "password": "Qwerty@123",
       "id": 1
     },
     {
-      "email": "anjalimaheshwari211@gmail.com",
-      "password": "Qwerty@123",
+      "email": "demo34@gmail.com",
+      "password": "Asdfghjkl@123",
       "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "id": 6,
+      "title": "MacBook Pro",
+      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "price": 1749,
+      "discountPercentage": 11.02,
+      "rating": 4.57,
+      "stock": 83,
+      "brand": "Apple",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "images": [
+        "https://i.dummyjson.com/data/products/6/1.png",
+        "https://i.dummyjson.com/data/products/6/2.jpg",
+        "https://i.dummyjson.com/data/products/6/3.png",
+        "https://i.dummyjson.com/data/products/6/4.jpg"
+      ],
+      "quantity": 1,
+      "user": 1
     },
     {
-      "email": "aryan123@gmail.com",
-      "password": "Aryan@123",
-      "id": 3
+      "id": 12,
+      "title": "Brown Perfume",
+      "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+      "price": 40,
+      "discountPercentage": 15.66,
+      "rating": 4,
+      "stock": 52,
+      "brand": "Royal_Mirage",
+      "category": "fragrances",
+      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/12/1.jpg",
+        "https://i.dummyjson.com/data/products/12/2.jpg",
+        "https://i.dummyjson.com/data/products/12/3.png",
+        "https://i.dummyjson.com/data/products/12/4.jpg",
+        "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 1
     },
     {
-      "email": "anjalimaheshwari211@gmail.com",
-      "password": "Qwerty@123",
-      "id": 4
+      "id": 7,
+      "title": "Samsung Galaxy Book",
+      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/7/1.jpg",
+        "https://i.dummyjson.com/data/products/7/2.jpg",
+        "https://i.dummyjson.com/data/products/7/3.jpg",
+        "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 2
+    },
+    {
+      "id": 3,
+      "title": "Samsung Universe 9",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ],
+      "quantity": 6,
+      "user": 2
+    },
+    {
+      "id": 9,
+      "title": "Infinix INBOOK",
+      "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+      "price": 1099,
+      "discountPercentage": 11.83,
+      "rating": 4.54,
+      "stock": 96,
+      "brand": "Infinix",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/9/1.jpg",
+        "https://i.dummyjson.com/data/products/9/2.png",
+        "https://i.dummyjson.com/data/products/9/3.png",
+        "https://i.dummyjson.com/data/products/9/4.jpg",
+        "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 2
+    },
+    {
+      "id": 71,
+      "title": "Women Shoulder Bags",
+      "description": "LouisWill Women Shoulder Bags Long Clutches Cross Body Bags Phone Bags PU Leather Hand Bags Large Capacity Card Holders Zipper Coin Purses Fashion Crossbody Bags for Girls Ladies",
+      "price": 46,
+      "discountPercentage": 14.65,
+      "rating": 4.71,
+      "stock": 17,
+      "brand": "LouisWill",
+      "category": "womens-bags",
+      "thumbnail": "https://i.dummyjson.com/data/products/71/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/71/1.jpg",
+        "https://i.dummyjson.com/data/products/71/2.jpg",
+        "https://i.dummyjson.com/data/products/71/3.webp",
+        "https://i.dummyjson.com/data/products/71/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 2
+    },
+    {
+      "id": 95,
+      "title": "Wholesale cargo lashing Belt",
+      "description": "Wholesale cargo lashing Belt Tie Down end Ratchet strap customized strap 25mm motorcycle 1500kgs with rubber handle",
+      "price": 930,
+      "discountPercentage": 17.67,
+      "rating": 4.21,
+      "stock": 144,
+      "brand": "Xiangle",
+      "category": "motorcycle",
+      "thumbnail": "https://i.dummyjson.com/data/products/95/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/95/1.jpg",
+        "https://i.dummyjson.com/data/products/95/2.jpg",
+        "https://i.dummyjson.com/data/products/95/3.jpg",
+        "https://i.dummyjson.com/data/products/95/4.jpg",
+        "https://i.dummyjson.com/data/products/95/thumbnail.jpg"
+      ],
+      "quantity": 5,
+      "user": 2
     }
   ]
 }

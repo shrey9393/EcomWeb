@@ -4,6 +4,9 @@ import { RadioGroup } from "@headlessui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProductByIdAsync, selectedProductById } from "../ProductSlice";
 import { useParams } from "react-router-dom";
+import { addToCartAsync } from "../../cart/CartSlice";
+import { User } from "heroicons-react";
+import { selectLoggedInUser } from "../../Auth/authSlice";
 
 const colors = [
   { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
@@ -41,6 +44,13 @@ export function ProductDetails() {
   const product = useSelector(selectedProductById);
   const dispatch = useDispatch();
   const params = useParams();
+  const user = useSelector(selectLoggedInUser);
+
+  const handelCart = (e) => {
+    e.preventDefault();
+    console.log(user);
+    dispatch(addToCartAsync({ ...product, quantity: 1, user: user.id }));
+  };
   useEffect(() => {
     dispatch(fetchAllProductByIdAsync(params.id));
   }, [dispatch, params.id]);
@@ -285,6 +295,7 @@ export function ProductDetails() {
                 </div>
 
                 <button
+                  onClick={handelCart}
                   type="submit"
                   className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
