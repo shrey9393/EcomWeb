@@ -5,7 +5,7 @@ import {
   selectItems,
   updateCartAsync,
 } from "./CartSlice";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export function Cart() {
   const dispatch = useDispatch();
@@ -26,6 +26,7 @@ export function Cart() {
 
   return (
     <>
+      {!items.length && <Navigate to="/" replace={true}></Navigate>}
       <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-8">
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
