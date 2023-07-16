@@ -14,6 +14,10 @@ import {
   updateUserAsync,
 } from "../features/Auth/authSlice";
 import { updateUser } from "../features/Auth/authAPI";
+import {
+  createOrderAsync,
+  selectCurrentOrder,
+} from "../features/order/orderSlice";
 
 function CheckOut() {
   const dispatch = useDispatch();
@@ -38,12 +42,47 @@ function CheckOut() {
     reset,
     formState: { errors },
   } = useForm();
+  const handleAddress = (e) => {
+    console.log("handel address");
+    setSelectedAddress(user.addresses[e.target.value]);
+  };
+  const handlePayment = (e) => {
+    console.log("handle payment");
+    console.log(e.target.value);
+    setPaymentMethod(e.target.value);
+  };
+  const currentOrder = useSelector(selectCurrentOrder);
+
+  const handleOrder = (e) => {
+    console.log("order placed successfully");
+    const order = {
+      items,
+      totalAmount,
+      user,
+      totalItems,
+      selectedAddress,
+      paymentMethod,
+      status: "pending",
+    };
+    console.log(order);
+    dispatch(createOrderAsync(order));
+
+    // TODO:redirect to success page and clear cart and change stock on server
+  };
 
   const user = useSelector(selectLoggedInUser);
 
+  const [selectedAddress, setSelectedAddress] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState("Cash");
   return (
     <>
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && (
+        <Navigate
+          to={`/order-success/${currentOrder.id}`}
+          replace={true}
+        ></Navigate>
+      )}
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
@@ -224,16 +263,17 @@ function CheckOut() {
                     Choose from Existing Address
                   </p>
                   <ul role="list">
-                    {user.addresses.map((address) => (
+                    {user.addresses.map((address, index) => (
                       <li
-                        key={address.email}
+                        key={index}
                         className="flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-300"
                       >
                         <div className="flex gap-x-4">
                           <input
-                            id="Cash"
+                            onChange={handleAddress}
                             name="Address"
                             type="radio"
+                            value={index}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                           />
                           <div className="min-w-0 flex-auto">
@@ -272,7 +312,10 @@ function CheckOut() {
                         <div className="flex items-center gap-x-3">
                           <input
                             id="Cash"
+                            onChange={handlePayment}
+                            value="Cash"
                             name="Payments"
+                            checked={paymentMethod === "Cash"}
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                           />
@@ -287,6 +330,9 @@ function CheckOut() {
                           <input
                             id="Card"
                             name="Payments"
+                            onChange={handlePayment}
+                            checked={paymentMethod === "Card"}
+                            value="Card"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                           />
@@ -392,12 +438,12 @@ function CheckOut() {
                   Shipping and taxes calculated at checkout.
                 </p>
                 <div className="mt-6">
-                  <Link
-                    to="/checkout"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  <div
+                    className="flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                    onClick={handleOrder}
                   >
-                    Checkout
-                  </Link>
+                    Order Now
+                  </div>
                 </div>
                 <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                   <p>
