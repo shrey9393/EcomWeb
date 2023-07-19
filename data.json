@@ -2463,9 +2463,37 @@
         }
       ],
       "id": 3
+    },
+    {
+      "email": "xyz@gmail.com",
+      "password": "Qwerty@123",
+      "addresses": [],
+      "id": 4
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "title": "Automatic Motor Gas Motorcycles",
+      "description": "150cc 4-Stroke Motorcycle Automatic Motor Gas Motorcycles Scooter motorcycles 150cc scooter",
+      "price": 1050,
+      "discountPercentage": 3.34,
+      "rating": 4.84,
+      "stock": 127,
+      "brand": "shock absorber",
+      "category": "motorcycle",
+      "thumbnail": "https://i.dummyjson.com/data/products/93/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/93/1.jpg",
+        "https://i.dummyjson.com/data/products/93/2.jpg",
+        "https://i.dummyjson.com/data/products/93/3.jpg",
+        "https://i.dummyjson.com/data/products/93/4.jpg",
+        "https://i.dummyjson.com/data/products/93/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 4,
+      "id": 5
+    }
+  ],
   "orders": [
     {
       "amount": {
@@ -2636,6 +2664,127 @@
         "status": "pending"
       },
       "id": 2
+    },
+    {
+      "amount": {
+        "items": [
+          {
+            "title": "MacBook Pro",
+            "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+            "price": 1749,
+            "discountPercentage": 11.02,
+            "rating": 4.57,
+            "stock": 83,
+            "brand": "Apple",
+            "category": "laptops",
+            "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+            "images": [
+              "https://i.dummyjson.com/data/products/6/1.png",
+              "https://i.dummyjson.com/data/products/6/2.jpg",
+              "https://i.dummyjson.com/data/products/6/3.png",
+              "https://i.dummyjson.com/data/products/6/4.jpg"
+            ],
+            "quantity": 1,
+            "user": 4,
+            "id": 1
+          },
+          {
+            "title": "perfume Oil",
+            "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+            "price": 13,
+            "discountPercentage": 8.4,
+            "rating": 4.26,
+            "stock": 65,
+            "brand": "Impression of Acqua Di Gio",
+            "category": "fragrances",
+            "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+            "images": [
+              "https://i.dummyjson.com/data/products/11/1.jpg",
+              "https://i.dummyjson.com/data/products/11/2.jpg",
+              "https://i.dummyjson.com/data/products/11/3.jpg",
+              "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+            ],
+            "quantity": 1,
+            "user": 4,
+            "id": 2
+          },
+          {
+            "title": "Spring and summershoes",
+            "description": "Comfortable stretch cloth, lightweight body; ,rubber sole, anti-skid wear;",
+            "price": 20,
+            "discountPercentage": 8.71,
+            "rating": 4.33,
+            "stock": 137,
+            "brand": "Sneakers",
+            "category": "mens-shoes",
+            "thumbnail": "https://i.dummyjson.com/data/products/59/thumbnail.jpg",
+            "images": [
+              "https://i.dummyjson.com/data/products/59/1.jpg",
+              "https://i.dummyjson.com/data/products/59/2.jpg",
+              "https://i.dummyjson.com/data/products/59/3.jpg",
+              "https://i.dummyjson.com/data/products/59/4.jpg",
+              "https://i.dummyjson.com/data/products/59/thumbnail.jpg"
+            ],
+            "quantity": 1,
+            "user": 4,
+            "id": 3
+          },
+          {
+            "title": "Brown Perfume",
+            "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+            "price": 40,
+            "discountPercentage": 15.66,
+            "rating": 4,
+            "stock": 52,
+            "brand": "Royal_Mirage",
+            "category": "fragrances",
+            "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+            "images": [
+              "https://i.dummyjson.com/data/products/12/1.jpg",
+              "https://i.dummyjson.com/data/products/12/2.jpg",
+              "https://i.dummyjson.com/data/products/12/3.png",
+              "https://i.dummyjson.com/data/products/12/4.jpg",
+              "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+            ],
+            "quantity": 1,
+            "user": 4,
+            "id": 4
+          },
+          {
+            "title": "Automatic Motor Gas Motorcycles",
+            "description": "150cc 4-Stroke Motorcycle Automatic Motor Gas Motorcycles Scooter motorcycles 150cc scooter",
+            "price": 1050,
+            "discountPercentage": 3.34,
+            "rating": 4.84,
+            "stock": 127,
+            "brand": "shock absorber",
+            "category": "motorcycle",
+            "thumbnail": "https://i.dummyjson.com/data/products/93/thumbnail.jpg",
+            "images": [
+              "https://i.dummyjson.com/data/products/93/1.jpg",
+              "https://i.dummyjson.com/data/products/93/2.jpg",
+              "https://i.dummyjson.com/data/products/93/3.jpg",
+              "https://i.dummyjson.com/data/products/93/4.jpg",
+              "https://i.dummyjson.com/data/products/93/thumbnail.jpg"
+            ],
+            "quantity": 1,
+            "user": 4,
+            "id": 5
+          }
+        ],
+        "totalAmount": 2872,
+        "user": {
+          "email": "xyz@gmail.com",
+          "password": "Qwerty@123",
+          "addresses": [],
+          "id": 4
+        },
+        "totalItems": 5,
+        "selectedAddress": null,
+        "paymentMethod": "Cash",
+        "status": "pending"
+      },
+      "id": 3
     }
   ]
 }
