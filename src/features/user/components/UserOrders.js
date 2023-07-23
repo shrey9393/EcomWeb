@@ -1,15 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, incrementAsync, selectCount } from "../userSlice";
-import styles from "./Counter.module.css";
+import { fetchLoggedInUserOrdersAsync, selectOrders } from "../userSlice";
+import { selectLoggedInUser } from "../../Auth/authSlice";
 
-export function Counter() {
-  const count = useSelector(selectCount);
+export function UserOrders() {
   const dispatch = useDispatch();
+  const user = useSelector(selectLoggedInUser);
+  const orders = useSelector(selectOrders);
+
+  useEffect(() => {
+    dispatch(fetchLoggedInUserOrdersAsync(user));
+  }, []);
 
   return (
-    <div>
-      <div></div>
-    </div>
+    <>
+      <div>
+        {orders.map((order) => (
+          <div>{order.id}</div>
+        ))}
+      </div>
+    </>
   );
 }
