@@ -2471,176 +2471,359 @@
       "id": 4
     }
   ],
-  "cart": [
-    {
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
-      "brand": "Apple",
-      "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
-      "images": [
-        "https://i.dummyjson.com/data/products/6/1.png",
-        "https://i.dummyjson.com/data/products/6/2.jpg",
-        "https://i.dummyjson.com/data/products/6/3.png",
-        "https://i.dummyjson.com/data/products/6/4.jpg"
-      ],
-      "quantity": 1,
-      "user": 3,
-      "id": 1
-    }
-  ],
+  "cart": [],
   "orders": [
     {
-      "amount": {
-        "items": [
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 2,
+          "id": 2
+        }
+      ],
+      "totalAmount": 1249,
+      "user": {
+        "email": "demo34@gmail.com",
+        "password": "Asdfghjkl@123",
+        "addresses": [
           {
-            "title": "iPhone X",
-            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-            "price": 899,
-            "discountPercentage": 17.94,
-            "rating": 4.44,
-            "stock": 34,
-            "brand": "Apple",
-            "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-            "images": [
-              "https://i.dummyjson.com/data/products/2/1.jpg",
-              "https://i.dummyjson.com/data/products/2/2.jpg",
-              "https://i.dummyjson.com/data/products/2/3.jpg",
-              "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-            ],
-            "quantity": 1,
-            "user": 2,
-            "id": 1
+            "name": "fdasdgfs",
+            "email": "afsdafd@gmail.com",
+            "phone": "21342546543",
+            "street": "asfgdhbgnfhmgfhdffsagsdgfhcxnznxc ",
+            "city": "sgfdnhvbm",
+            "state": "agsrzhdxgjfhcm,jvbm",
+            "pinCode": "123425"
           }
         ],
-        "totalAmount": 899,
-        "user": {
-          "email": "demo34@gmail.com",
-          "password": "Asdfghjkl@123",
-          "addresses": [
-            {
-              "name": "fdasdgfs",
-              "email": "afsdafd@gmail.com",
-              "phone": "21342546543",
-              "street": "asfgdhbgnfhmgfhdffsagsdgfhcxnznxc ",
-              "city": "sgfdnhvbm",
-              "state": "agsrzhdxgjfhcm,jvbm",
-              "pinCode": "123425"
-            }
-          ],
-          "id": 2
-        },
-        "totalItems": 1,
-        "selectedAddress": {
-          "name": "fdasdgfs",
-          "email": "afsdafd@gmail.com",
-          "phone": "21342546543",
-          "street": "asfgdhbgnfhmgfhdffsagsdgfhcxnznxc ",
-          "city": "sgfdnhvbm",
-          "state": "agsrzhdxgjfhcm,jvbm",
-          "pinCode": "123425"
-        },
-        "paymentMethod": "Cash",
-        "status": "pending"
+        "id": 2
       },
-      "id": 1
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "fdasdgfs",
+        "email": "afsdafd@gmail.com",
+        "phone": "21342546543",
+        "street": "asfgdhbgnfhmgfhdffsagsdgfhcxnznxc ",
+        "city": "sgfdnhvbm",
+        "state": "agsrzhdxgjfhcm,jvbm",
+        "pinCode": "123425"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 3
     },
     {
-      "amount": {
-        "items": [
+      "items": [
+        {
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 1
+        }
+      ],
+      "totalAmount": 1749,
+      "user": {
+        "email": "random123@gmail.com",
+        "password": "Zxcvbnm@123",
+        "addresses": [
           {
-            "title": "MacBook Pro",
-            "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-            "price": 1749,
-            "discountPercentage": 11.02,
-            "rating": 4.57,
-            "stock": 83,
-            "brand": "Apple",
-            "category": "laptops",
-            "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
-            "images": [
-              "https://i.dummyjson.com/data/products/6/1.png",
-              "https://i.dummyjson.com/data/products/6/2.jpg",
-              "https://i.dummyjson.com/data/products/6/3.png",
-              "https://i.dummyjson.com/data/products/6/4.jpg"
-            ],
-            "quantity": 1,
-            "user": 3,
-            "id": 1
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "48486451478965",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "random",
+            "email": "test12@gmail.com",
+            "phone": "48648641351",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "dxxgfchvj",
+            "email": "xdgfchvjnk@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Bhopal",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
           }
         ],
-        "totalAmount": 1749,
-        "user": {
-          "email": "random123@gmail.com",
-          "password": "Zxcvbnm@123",
-          "addresses": [
-            {
-              "name": "testBot",
-              "email": "test12@gmail.com",
-              "phone": "01234567890",
-              "street": "cityLight",
-              "city": "Delhi, India",
-              "state": "MADHYA PRADESH",
-              "pinCode": "395007"
-            },
-            {
-              "name": "testBot",
-              "email": "test12@gmail.com",
-              "phone": "48486451478965",
-              "street": "cityLight",
-              "city": "Delhi, India",
-              "state": "MADHYA PRADESH",
-              "pinCode": "395007"
-            },
-            {
-              "name": "testBot",
-              "email": "test12@gmail.com",
-              "phone": "01234567890",
-              "street": "cityLight",
-              "city": "Delhi, India",
-              "state": "MADHYA PRADESH",
-              "pinCode": "395007"
-            },
-            {
-              "name": "random",
-              "email": "test12@gmail.com",
-              "phone": "48648641351",
-              "street": "cityLight",
-              "city": "Delhi, India",
-              "state": "MADHYA PRADESH",
-              "pinCode": "395007"
-            },
-            {
-              "name": "dxxgfchvj",
-              "email": "xdgfchvjnk@gmail.com",
-              "phone": "01234567890",
-              "street": "cityLight",
-              "city": "Bhopal",
-              "state": "MADHYA PRADESH",
-              "pinCode": "395007"
-            }
-          ],
-          "id": 3
-        },
-        "totalItems": 1,
-        "selectedAddress": {
-          "name": "testBot",
-          "email": "test12@gmail.com",
-          "phone": "01234567890",
-          "street": "cityLight",
-          "city": "Delhi, India",
-          "state": "MADHYA PRADESH",
-          "pinCode": "395007"
-        },
-        "paymentMethod": "Cash",
-        "status": "pending"
+        "id": 3
       },
-      "id": 2
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "testBot",
+        "email": "test12@gmail.com",
+        "phone": "01234567890",
+        "street": "cityLight",
+        "city": "Delhi, India",
+        "state": "MADHYA PRADESH",
+        "pinCode": "395007"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "items": [
+        {
+          "title": "Malai Maxi Dress",
+          "description": "Ready to wear, Unique design according to modern standard fashion, Best fitting ,Imported stuff",
+          "price": 50,
+          "discountPercentage": 5.07,
+          "rating": 4.67,
+          "stock": 96,
+          "brand": "IELGY",
+          "category": "womens-dresses",
+          "thumbnail": "https://i.dummyjson.com/data/products/45/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/45/1.jpg",
+            "https://i.dummyjson.com/data/products/45/2.webp",
+            "https://i.dummyjson.com/data/products/45/3.jpg",
+            "https://i.dummyjson.com/data/products/45/4.jpg",
+            "https://i.dummyjson.com/data/products/45/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 1
+        },
+        {
+          "title": "Brown Perfume",
+          "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+          "price": 40,
+          "discountPercentage": 15.66,
+          "rating": 4,
+          "stock": 52,
+          "brand": "Royal_Mirage",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/12/1.jpg",
+            "https://i.dummyjson.com/data/products/12/2.jpg",
+            "https://i.dummyjson.com/data/products/12/3.png",
+            "https://i.dummyjson.com/data/products/12/4.jpg",
+            "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 2
+        }
+      ],
+      "totalAmount": 90,
+      "user": {
+        "email": "random123@gmail.com",
+        "password": "Zxcvbnm@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "48486451478965",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "random",
+            "email": "test12@gmail.com",
+            "phone": "48648641351",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "dxxgfchvj",
+            "email": "xdgfchvjnk@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Bhopal",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          }
+        ],
+        "id": 3
+      },
+      "totalItems": 2,
+      "selectedAddress": {
+        "name": "dxxgfchvj",
+        "email": "xdgfchvjnk@gmail.com",
+        "phone": "01234567890",
+        "street": "cityLight",
+        "city": "Bhopal",
+        "state": "MADHYA PRADESH",
+        "pinCode": "395007"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 899,
+      "user": {
+        "email": "test12@gmail.com",
+        "password": "Qwerty@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "afsdaf",
+            "email": "asfdasdf@gmail.com",
+            "phone": "098765432",
+            "street": "sfdagvzcv",
+            "city": "fdzcvzxcbvzxc",
+            "state": "adfascvbcxzcv",
+            "pinCode": "12345"
+          }
+        ],
+        "id": 1
+      },
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "afsdaf",
+        "email": "asfdasdf@gmail.com",
+        "phone": "098765432",
+        "street": "sfdagvzcv",
+        "city": "fdzcvzxcbvzxc",
+        "state": "adfascvbcxzcv",
+        "pinCode": "12345"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 6
     }
   ]
 }

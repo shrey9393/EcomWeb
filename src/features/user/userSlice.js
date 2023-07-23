@@ -29,11 +29,12 @@ export const userSlice = createSlice({
       })
       .addCase(fetchLoggedInUserOrdersAsync.fulfilled, (state, action) => {
         state.status = "idle";
+        console.log(action.payload);
         state.userOrder = action.payload;
       });
   },
 });
 
-export const { increment } = userSlice.actions;
 export const selectOrders = (state) => state.user.userOrder;
+export const { increment } = userSlice.actions;
 export default userSlice.reducer;
