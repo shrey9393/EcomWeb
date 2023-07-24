@@ -2824,6 +2824,96 @@
       "paymentMethod": "Cash",
       "status": "pending",
       "id": 6
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 1
+        }
+      ],
+      "totalAmount": 899,
+      "user": {
+        "email": "random123@gmail.com",
+        "password": "Zxcvbnm@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "48486451478965",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "random",
+            "email": "test12@gmail.com",
+            "phone": "48648641351",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "dxxgfchvj",
+            "email": "xdgfchvjnk@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Bhopal",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          }
+        ],
+        "id": 3
+      },
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "testBot",
+        "email": "test12@gmail.com",
+        "phone": "01234567890",
+        "street": "cityLight",
+        "city": "Delhi, India",
+        "state": "MADHYA PRADESH",
+        "pinCode": "395007"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 7
     }
   ]
 }

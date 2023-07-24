@@ -12,6 +12,7 @@ import {
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import UserProfile from "./features/user/components/UserProfile";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
   {
     path: "/orders",
     element: <UserOrderPage />,
+  },
+  {
+    path: "/profile",
+    element: <UserProfile />,
   },
   {
     path: "*",
