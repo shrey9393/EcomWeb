@@ -2460,6 +2460,15 @@
           "city": "Bhopal",
           "state": "MADHYA PRADESH",
           "pinCode": "395007"
+        },
+        {
+          "name": "qwerty",
+          "email": "asdfghjkl@gmail.com",
+          "phone": "963852741",
+          "street": "uiop qwerty",
+          "city": "asdfgh",
+          "state": "zxcvbn",
+          "pinCode": "123445"
         }
       ],
       "id": 3
@@ -2914,6 +2923,105 @@
       "paymentMethod": "Cash",
       "status": "pending",
       "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 1
+        }
+      ],
+      "totalAmount": 1099,
+      "user": {
+        "email": "random123@gmail.com",
+        "password": "Zxcvbnm@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "48486451478965",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "random",
+            "email": "test12@gmail.com",
+            "phone": "48648641351",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "dxxgfchvj",
+            "email": "xdgfchvjnk@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Bhopal",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "qwerty",
+            "email": "asdfghjkl@gmail.com",
+            "phone": "963852741",
+            "street": "uiop qwerty",
+            "city": "asdfgh",
+            "state": "zxcvbn",
+            "pinCode": "123445"
+          }
+        ],
+        "id": 3
+      },
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "qwerty",
+        "email": "asdfghjkl@gmail.com",
+        "phone": "963852741",
+        "street": "uiop qwerty",
+        "city": "asdfgh",
+        "state": "zxcvbn",
+        "pinCode": "123445"
+      },
+      "paymentMethod": "Card",
+      "status": "pending",
+      "id": 8
     }
   ]
 }
