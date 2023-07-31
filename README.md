@@ -1,46 +1,110 @@
-# Getting Started with Create React App and Redux
+# E-Commerce Frontend README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Introduction
 
-## Available Scripts
+Welcome to the frontend of the E-Commerce Website Project! This is the client-side of the application, built using React, Redux Toolkit for state management, and Tailwind CSS for styling. The purpose of this project is to provide an interactive and user-friendly interface for customers to browse and purchase products.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+This frontend application comes with a range of features, including but not limited to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Product Listing:** Displaying a list of products with their details.
+- **Product Details:** Showing detailed information about a selected product.
+- **User Authentication:** Allowing users to log in, sign up, and log out.
+- **Shopping Cart:** Allowing users to add products to the cart, update quantities, and proceed to checkout.
+- **Search and Filtering:** Enabling users to search for products and filter them by category, price range, etc.
+- **Responsive Design:** Ensuring that the website is fully responsive and works on various devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Images
 
-### `npm test`
+### Home Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home Page](/images/home_page.png)
 
-### `npm run build`
+The Home Page serves as the landing page for the E-Commerce website. It displays a list of featured products with their names, prices, and images. Customers can easily navigate through the products and click on any product to view its details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Product Details Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Product Details Page](/images/product_details_page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Product Details Page provides comprehensive information about a specific product. It includes the product name, description, price, images, and any other relevant details. Customers can select the quantity they want and add the product to their cart from this page.
 
-### `npm run eject`
+### Cart Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Cart Page](/images/cart_page.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Cart Page displays the products that the customer has added to their shopping cart. It shows the product names, quantities, prices, and subtotal for each item. Customers can update the quantity or remove products from the cart. They can proceed to checkout from this page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Checkout Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Checkout Page](/images/checkout_page.png)
 
-## Learn More
+The Checkout Page allows customers to review their order before finalizing the purchase. It shows the order summary, including product names, quantities, and total amount. Customers can provide their shipping and payment information to complete the purchase.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React:** For building the user interface and components.
+- **Redux Toolkit:** For managing the application's state and data flow.
+- **Tailwind CSS:** For responsive and utility-first CSS styling.
+
+## Installation
+
+To install and run this frontend application on your local machine, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/e-commerce-frontend.git`
+2. Navigate to the project directory: `cd e-commerce-frontend`
+3. Install the dependencies: `npm install`
+
+## Configuration
+
+Before running the application, make sure to configure the necessary information:
+
+1. **API Endpoint:** In the `src/utils/api.js` file, set the `API_BASE_URL` variable to the backend API endpoint. For example:
+   ```javascript
+   export const API_BASE_URL = "http://localhost:5000/api";
+   ```
+
+## Usage
+
+To start the development server and use the application, follow these steps:
+
+1. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+   The application will run on `http://localhost:3000` by default.
+
+2. Open your web browser and navigate to `http://localhost:3000`.
+
+3. You can now interact with the E-Commerce frontend application.
+
+## Folder Structure
+
+```
+e-commerce-frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── store/
+│   ├── utils/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── ...
+```
+
+## Contributing
+
+Contributions to this frontend project are welcome! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`.
+3. Commit your changes: `git commit -m "Add your feature"`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Create a pull request.

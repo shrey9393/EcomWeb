@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectLoggedInUser } from "../../Auth/authSlice";
+import { selectUserInfo } from "../userSlice";
 
 export function UserProfile() {
   const dispatch = useDispatch();
-  const user = useSelector(selectLoggedInUser);
+  const user = useSelector(selectUserInfo);
+
+  const handelEdit = () => {};
+  const handelRemove = (e, index) => {};
 
   return (
     <div>
@@ -21,7 +24,7 @@ export function UserProfile() {
 
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
             <p className="mt-0.5 text-sm text-gray-600">Your Address:</p>
-            {user.addresses.map((address) => (
+            {user.addresses.map((address, index) => (
               <div className="flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-300">
                 <div className="flex gap-x-4">
                   <div className="min-w-0 flex-auto">
@@ -43,6 +46,22 @@ export function UserProfile() {
                   <p className="text-sm leading-6 text-gray-500">
                     {address.city}
                   </p>
+                </div>
+                <div className="hidden sm:flex sm:flex-col sm:items-end">
+                  <button
+                    type="button"
+                    onClick={(e) => handelEdit(e, index)}
+                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => handelRemove(e, index)}
+                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                  >
+                    Remove
+                  </button>
                 </div>
               </div>
             ))}

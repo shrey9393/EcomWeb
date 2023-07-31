@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import "./index.css";
-import * as ReactDOM from "react-dom/client";
-import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,7 +10,6 @@ import {
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import UserProfile from "./features/user/components/UserProfile";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
@@ -22,8 +19,9 @@ import { fetchItemsByUserIdAsync } from "./features/cart/CartSlice";
 import { selectLoggedInUser } from "./features/Auth/authSlice";
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
-import { UserOrders } from "./features/user/components/UserOrders";
 import UserOrderPage from "./pages/UserOrderPage";
+import UserProfilePage from "./pages/UserProfilePage";
+import { fetchLoggedInUserAsync } from "./features/user/userSlice";
 
 const router = createBrowserRouter([
   {
@@ -77,7 +75,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <UserProfile />,
+    element: <UserProfilePage />,
   },
   {
     path: "*",
@@ -91,6 +89,7 @@ function App() {
   useEffect(() => {
     if (user) {
       dispatch(fetchItemsByUserIdAsync(user.id));
+      dispatch(fetchLoggedInUserAsync(user.id));
     }
   }, [dispatch, user]);
   return (

@@ -1,8 +1,6 @@
-import { useForm, SubmitHandler } from "react-hook-form";
-import { Fragment, useState } from "react";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Dialog, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Navigate } from "react-router-dom";
 import {
   deleteItemFromCartAsync,
@@ -13,7 +11,6 @@ import {
   selectLoggedInUser,
   updateUserAsync,
 } from "../features/Auth/authSlice";
-import { updateUser } from "../features/Auth/authAPI";
 import {
   createOrderAsync,
   selectCurrentOrder,
