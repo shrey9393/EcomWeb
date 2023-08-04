@@ -16,30 +16,36 @@ This frontend application comes with a range of features, including but not limi
 - **Responsive Design:** Ensuring that the website is fully responsive and works on various devices.
 
 ## Images
+### Login and SignUp
+
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/776db0a4-1b3b-4736-be07-c592a9bcca1f)
+
 
 ### Home Page
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/b250056c-2217-491d-9038-aa3364620f37)
 
-![Home Page](/images/home_page.png)
 
 The Home Page serves as the landing page for the E-Commerce website. It displays a list of featured products with their names, prices, and images. Customers can easily navigate through the products and click on any product to view its details.
 
 ### Product Details Page
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/63f119de-9f5e-4f33-abe4-e9fb8726cd53)
 
-![Product Details Page](/images/product_details_page.png)
 
 The Product Details Page provides comprehensive information about a specific product. It includes the product name, description, price, images, and any other relevant details. Customers can select the quantity they want and add the product to their cart from this page.
 
 ### Cart Page
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/843435ad-59c6-4f6e-8bf3-d31692f0a1d8)
 
-![Cart Page](/images/cart_page.png)
 
 The Cart Page displays the products that the customer has added to their shopping cart. It shows the product names, quantities, prices, and subtotal for each item. Customers can update the quantity or remove products from the cart. They can proceed to checkout from this page.
 
 ### Checkout Page
 
-![Checkout Page](/images/checkout_page.png)
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/e5fa211e-252d-405c-96dc-4dd59e01e48d)
 
 The Checkout Page allows customers to review their order before finalizing the purchase. It shows the order summary, including product names, quantities, and total amount. Customers can provide their shipping and payment information to complete the purchase.
+
+![image](https://github.com/shrey9393/EcomWeb/assets/80638949/f0b7c69b-5e4f-4966-a5af-c562a0b33b60)
 
 ## Technologies Used
 
