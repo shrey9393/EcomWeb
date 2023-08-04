@@ -7,7 +7,9 @@ export function UserProfile() {
   const user = useSelector(selectUserInfo);
 
   const handelEdit = () => {};
-  const handelRemove = (e, index) => {};
+  const handelRemove = (e, index) => {
+    const newUser = { ...user, addresses: [...user.addresses] };
+  };
 
   return (
     <div>

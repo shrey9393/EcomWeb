@@ -48,9 +48,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
     },
     {
       "id": 4,
@@ -1428,9 +1426,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"]
     },
     {
       "id": 79,
@@ -1443,9 +1439,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/79/1.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/79/1.jpg"]
     },
     {
       "id": 80,
@@ -2494,9 +2488,7 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/3/1.jpg"
-          ],
+          "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
           "quantity": 1,
           "user": 2,
           "id": 2
@@ -3113,6 +3105,105 @@
       "paymentMethod": "Cash",
       "status": "pending",
       "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 899,
+      "user": {
+        "email": "test12@gmail.com",
+        "password": "Qwerty@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          },
+          {
+            "name": "afsdaf",
+            "email": "asfdasdf@gmail.com",
+            "phone": "098765432",
+            "street": "sfdagvzcv",
+            "city": "fdzcvzxcbvzxc",
+            "state": "adfascvbcxzcv",
+            "pinCode": "12345"
+          }
+        ],
+        "id": 1
+      },
+      "totalItems": 1,
+      "selectedAddress": {
+        "name": "testBot",
+        "email": "test12@gmail.com",
+        "phone": "01234567890",
+        "street": "cityLight",
+        "city": "Delhi, India",
+        "state": "MADHYA PRADESH",
+        "pinCode": "395007"
+      },
+      "paymentMethod": "Cash",
+      "status": "pending",
+      "id": 10
     }
   ]
 }
