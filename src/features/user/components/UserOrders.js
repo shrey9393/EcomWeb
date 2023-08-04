@@ -9,7 +9,7 @@ import { selectLoggedInUser } from "../../Auth/authSlice";
 
 export function UserOrders() {
   const dispatch = useDispatch();
-  const user = useSelector(selectUserInfo);
+  const user = useSelector(selectLoggedInUser);
   const orders = useSelector(selectOrders);
 
   useEffect(() => {
