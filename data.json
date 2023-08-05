@@ -48,9 +48,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
     },
     {
       "id": 4,
@@ -1428,9 +1426,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"]
     },
     {
       "id": 79,
@@ -1443,9 +1439,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/79/1.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/79/1.jpg"]
     },
     {
       "id": 80,
@@ -2338,6 +2332,7 @@
     {
       "email": "test@gmail.com",
       "password": "Qwerty123",
+      "role": "user",
       "addresses": [
         {
           "name": "Abhishek Rathore",
@@ -2363,6 +2358,7 @@
     {
       "email": "demo@gmail.com",
       "password": "Qwerty123",
+      "role": "user",
       "addresses": [
         {
           "name": "Demo user",
@@ -2379,8 +2375,26 @@
     {
       "email": "random123@gmail.com",
       "password": "Zxcvbnm@123",
-      "addresses": [],
+      "role": "user",
+      "addresses": [
+        {
+          "name": "testBot",
+          "email": "test12@gmail.com",
+          "phone": "01234567890",
+          "street": "cityLight",
+          "city": "Delhi, India",
+          "state": "MADHYA PRADESH",
+          "pinCode": "395007"
+        }
+      ],
       "id": 3
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "role": "admin",
+      "addresses": [],
+      "id": 4
     }
   ],
   "cart": [],
@@ -2524,9 +2538,7 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/3/1.jpg"
-          ],
+          "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
           "quantity": 2,
           "user": 2
         },
@@ -2707,6 +2719,60 @@
       },
       "status": "pending",
       "id": 5
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 3,
+          "id": 1
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "random123@gmail.com",
+        "password": "Zxcvbnm@123",
+        "addresses": [
+          {
+            "name": "testBot",
+            "email": "test12@gmail.com",
+            "phone": "01234567890",
+            "street": "cityLight",
+            "city": "Delhi, India",
+            "state": "MADHYA PRADESH",
+            "pinCode": "395007"
+          }
+        ],
+        "id": 3
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "testBot",
+        "email": "test12@gmail.com",
+        "phone": "01234567890",
+        "street": "cityLight",
+        "city": "Delhi, India",
+        "state": "MADHYA PRADESH",
+        "pinCode": "395007"
+      },
+      "status": "pending",
+      "id": 6
     }
   ]
 }
