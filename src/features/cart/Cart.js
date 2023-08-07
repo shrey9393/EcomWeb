@@ -1,12 +1,12 @@
-import { Fragment } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { Fragment } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
   deleteItemFromCartAsync,
   selectItems,
   updateCartAsync,
-} from './cartSlice';
-import { Link } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
+} from "./cartSlice";
+import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function Cart() {
   const dispatch = useDispatch();
